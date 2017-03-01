@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="DaigouzheFlagLabel" destination="YZb-3h-Tr0" id="T6d-1u-EEh"/>
+                <outlet property="FlagSwitch" destination="Y6e-n2-EfD" id="oH5-zI-Rf6"/>
+                <outlet property="registerButton" destination="rZh-N3-JXw" id="yhA-DZ-eEw"/>
+                <outlet property="tableView" destination="Z30-JW-lye" id="lqK-rJ-vco"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Z30-JW-lye">
+                    <rect key="frame" x="0.0" y="11" width="600" height="335"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="335" id="w0T-hW-qM4"/>
+                    </constraints>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是代购人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZb-3h-Tr0">
+                    <rect key="frame" x="8" y="369" width="85" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y6e-n2-EfD">
+                    <rect key="frame" x="107" y="364" width="51" height="31"/>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZh-N3-JXw" customClass="FlatButton">
+                    <rect key="frame" x="6" y="551" width="589" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="rLg-oh-HwC"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Y6e-n2-EfD" firstAttribute="top" secondItem="Z30-JW-lye" secondAttribute="bottom" constant="18" id="54d-jP-Gez"/>
+                <constraint firstItem="YZb-3h-Tr0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="A1d-9N-FSI"/>
+                <constraint firstItem="Z30-JW-lye" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LCL-nc-fLQ"/>
+                <constraint firstItem="Y6e-n2-EfD" firstAttribute="leading" secondItem="YZb-3h-Tr0" secondAttribute="trailing" constant="14" id="aAg-8g-dL5"/>
+                <constraint firstAttribute="trailing" secondItem="Z30-JW-lye" secondAttribute="trailing" id="aod-W7-pd6"/>
+                <constraint firstItem="Z30-JW-lye" firstAttribute="centerX" secondItem="rZh-N3-JXw" secondAttribute="centerX" id="hfu-Wy-gKv"/>
+                <constraint firstAttribute="bottom" secondItem="rZh-N3-JXw" secondAttribute="bottom" constant="11" id="hi8-lp-vQu"/>
+                <constraint firstItem="YZb-3h-Tr0" firstAttribute="centerY" secondItem="Y6e-n2-EfD" secondAttribute="centerY" id="kuq-qg-WNr"/>
+                <constraint firstItem="Z30-JW-lye" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="11" id="o0S-vH-2oM"/>
+                <constraint firstItem="rZh-N3-JXw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="q90-Jd-yuP"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

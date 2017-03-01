@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/list_item_padding_top_bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@drawable/order_form_layout_bg1">
+
+        <TextView
+            android:id="@+id/create_order_detail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_detail"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_form_layout_bg">
+
+        <TextView
+            android:id="@+id/create_order_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/create_order_productName_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_padding_left_right"
+            android:layout_toRightOf="@+id/create_order_productName"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_form_layout_bg">
+
+        <TextView
+            android:id="@+id/create_order_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_category"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+
+        <Spinner
+            android:id="@+id/create_order_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editor_item_height"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:layout_toRightOf="@+id/create_order_category"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            android:spinnerMode="dropdown"
+            android:contextClickable="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_form_layout_bg">
+
+        <TextView
+            android:id="@+id/create_order_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/create_order_quantity_delete_Button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gogou_main_button"
+            android:text="-"
+            android:layout_toRightOf="@+id/create_order_quantity"
+            android:layout_alignParentEnd="false" />
+
+        <TextView
+            android:id="@+id/create_order_quantity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="1"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:layout_toRightOf="@+id/create_order_quantity_delete_Button"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/create_order_quantity_add_Button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:background="@drawable/gogou_main_button"
+            android:layout_toRightOf="@+id/create_order_quantity_text"
+            android:layout_centerVertical="true"
+            android:text="+"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_form_layout_bg">
+
+        <EditText
+            android:id="@+id/create_order_details_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/detail_text"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:lines="3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:hint="@string/detailedinformation"
+            android:textColorHint="@color/aluminum"
+            android:background="@color/transparent"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.photo.AlbumActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/albumLayoutToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appMainColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <Button
+                android:id="@+id/albumBackButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backward"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/album"
+                android:textColor="@color/toolbarTextColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:id="@+id/albumBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_buttons_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/select_image_bottom_bar"
+            android:layout_marginTop="3dp"
+            >
+            <Button
+                android:id="@+id/imagePreviewButton"
+                android:layout_width="@dimen/bottom_buttons_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginTop="@dimen/button_padding_top_bottom2"
+                android:layout_marginBottom="@dimen/button_padding_top_bottom2"
+                android:text="@string/preview"
+                android:textSize="@dimen/list_item_subtitle"
+                android:textColor="@color/buttonTextColor"
+                android:background="@drawable/gogou_main_button"
+                android:enabled="false"
+                />
+            <Button
+                android:id="@+id/albumConfirmButton"
+                android:layout_width="@dimen/bottom_buttons_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/button_padding_left_right"
+                android:layout_marginTop="@dimen/button_padding_top_bottom2"
+                android:layout_marginBottom="@dimen/button_padding_top_bottom2"
+                android:textSize="@dimen/list_item_subtitle"
+                android:background="@drawable/gogou_main_button"
+                android:enabled="false"
+                />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/albumGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/albumBottomLayout"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/layout_padding_top_bottom"
+            android:horizontalSpacing="@dimen/gridview_horizontal_space"
+            android:verticalSpacing="@dimen/gridview_vertical_space"
+            android:numColumns="4"
+            android:background="@color/albumback" />
+        <TextView
+            android:id="@+id/noImageText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_photo"
+            android:textColor="@color/black"
+            />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

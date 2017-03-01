@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/list_item_padding_top_bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_detail_layout_bg1">
+
+        <TextView
+            android:id="@+id/orderDetailCollectInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collection"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/orderDetailCollectInfoText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_padding_left_right"
+            android:layout_toRightOf="@+id/orderDetailCollectInfoLabel"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom">
+
+        <TextView
+            android:id="@+id/orderDetailPhoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_phone"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/orderDetailPhoneText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_padding_left_right"
+            android:layout_toRightOf="@+id/orderDetailPhoneLabel"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_detail_layout_bg">
+
+        <TextView
+            android:id="@+id/orderDetailAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_detail_address"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/orderDetailAddressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:layout_toRightOf="@+id/orderDetailAddressLabel"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

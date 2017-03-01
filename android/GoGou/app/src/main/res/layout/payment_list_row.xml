@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/list_item_padding_top_bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/layout_padding_top_bottom"
+            android:paddingBottom="@dimen/layout_padding_top_bottom">
+
+            <ImageView
+                android:id="@+id/paymentLogo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/alipay"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_padding_left_right"
+                />
+
+            <TextView
+                android:id="@+id/paymentAccount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_toRightOf="@id/paymentLogo"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/layout_padding_left_right"
+                android:textColor="@color/jet"
+                android:typeface="sans"
+                android:textSize="@dimen/list_item_title" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

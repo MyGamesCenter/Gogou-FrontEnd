@@ -1,0 +1,471 @@
+<resources>
+
+    <!-- General UI Text -->
+    <string name="app_name">游游购</string>
+    <string name="action_settings">设置</string>
+    <string name="iti_from">出发地</string>
+    <string name="iti_to">目的地</string>f
+    <string name="product_category">物品类别</string>
+    <string name="select">筛选条件</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="password_confirm">确认密码</string>
+    <string name="login">登录</string>
+    <string name="logout">退出登录</string>
+    <string name="forgot_password">忘记密码?</string>
+    <string name="register">注册用户</string>
+    <string name="email">邮箱</string>
+    <string name="passconfirm">确认密码</string>
+    <string name="scheduledetail">行程详情</string>
+    <string name="departure_time">出发时间</string>
+    <string name="arrival_time">到达时间</string>
+    <string name="maxweight">最大质量(kg)</string>
+    <string name="maxvolume">最大体积(cm3)</string>
+    <string name="preferred_category">优先物品类别</string>
+    <string name="detailedinformation">详细信息</string>
+    <string name="contact_traveller">联系游客</string>
+    <string name="myschedule">我的行程</string>
+    <string name="schedule">行程</string>
+    <string name="description">描述</string>
+    <string name="requirement">需求</string>
+    <string name="confirm">确认</string>
+    <string name="mymessage">我的消息</string>
+    <string name="otherlogin">其他登录方式</string>
+    <string name="phonenumber">手机号(可选)</string>
+    <string name="phone_number">手机号</string>
+    <string name="address">地址(可选)</string>
+    <string name="Address">地址</string>
+    <string name="i_buy">我买东西</string>
+    <string name="i_travel">我要旅行</string>
+    <string name="take_photo">拍照</string>
+    <string name="collect_location1">收货地</string>
+    <string name="expecttime">预期时间</string>
+    <string name="brand">品牌</string>
+    <string name="product_origin1">原产地</string>
+    <string name="number">数量</string>
+    <string name="price">出价</string>
+    <string name="shoppingdetail">购物详情</string>
+    <string name="contact_requester">联系买家</string>
+    <string name="order">订单</string>
+    <string name="home">主页</string>
+    <string name="buysome">我买东西</string>
+    <string name="kind">类别</string>
+    <string name="hignscore">评分最高</string>
+    <string name="lowfee">服务费最低</string>
+    <string name="hignfee">付费最高</string>
+    <string name="mySetting">我的设置</string>
+    <string name="publish">我要发布</string>
+    <string name="product_origin">原产地: </string>
+    <string name="collect_location">收货地: </string>
+    <string name="product_name">物品名称</string>
+    <string name="departure_label">出发地: </string>
+    <string name="destination_label">目的地: </string>
+    <string name="departDate_label">出发时间: </string>
+    <string name="arrivalDate_label">到达时间: </string>
+    <string name="contact_phone">联系电话</string>
+    <string name="menu_settings">设置</string>
+    <string name="myOrder">我的订单</string>
+    <string name="myReceivedOrder">我的接单</string>
+    <string name="myFavorite">我的收藏</string>
+    <string name="myRelease">我的发布</string>
+    <string name="help">帮助</string>
+    <string name="mysetting">我的设置</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="schedule_release_text">发布行程(需上传身份证照)</string>
+    <string name="i_am_seller_label">我是代购人</string>
+    <string name="yes_label">是</string>
+    <string name="no_label">否</string>
+    <string name="cancel">取消</string>
+    <string name="ipaddress">IP Address</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="year_format">年</string>
+    <string name="month_format">月</string>
+    <string name="day_format">日</string>
+    <string name="submit">提交</string>
+    <string name="select_time">选择时间</string>
+    <string name="login_now">马上登录</string>
+    <string name="chat_send">发送</string>
+
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to send downstream messages to this app.</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token, sending the fetched token to the server or subscribing to the PubSub topic. Please try running the sample again.</string>
+
+    <!-- category -->
+    <string name="category_wine">红酒</string>
+    <string name="category_alcohol">高度酒</string>
+    <string name="category_baby_product">婴儿用品</string>
+    <string name="category_bag">包包</string>
+    <string name="category_clothes">衣服</string>
+    <string name="category_local_specialties">土特产</string>
+    <string name="category_health">保健品</string>
+    <string name="category_beauty">化妆品-香水</string>
+    <string name="category_toys">玩具</string>
+    <string name="category_electronics">电子产品</string>
+    <string name="category_computer">电脑</string>
+    <string name="category_jewellery">首饰</string>
+    <string name="category_shoe">鞋类</string>
+    <string name="category_watch">手表</string>
+    <string name="category_sports_fitness">体育用品</string>
+    <string name="category_tobaco">烟草</string>
+    <string name="category">类别</string>
+
+    <!-- account info and security -->
+    <string name="account_and_security">账户与安全</string>
+    <string name="personal_document">个人资料</string>
+    <string name="avatar">头像</string>
+    <string name="gender">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="myAddress">我的地址</string>
+    <string name="phoneNumber">电话号码</string>
+    <string name="newPhoneNumber">新电话号码</string>
+    <string name="emailAddress">电子邮件</string>
+    <string name="ModifyPhone">修改手机号码</string>
+    <string name="ModifyEmail">修改绑定邮箱</string>
+    <string name="confirm_submit">确认提交</string>
+    <string name="ModifyPassword">修改登录密码</string>
+    <string name="origin_password">原密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_new_password">确认新密码</string>
+    <string name="add_payment">添加支付方式</string>
+    <string name="payment_info">我的支付信息</string>
+    <string name="payment_account">我的支付宝账户:</string>
+    <string name="newEmail">新的邮箱</string>
+    <string name="nextStep">下一步</string>
+    <string name="checksumPage">安全校验</string>
+    <string name="checksum">校验码</string>
+    <string name="reset_code">校验码</string>
+    <string name="get_reg_code">获取校验码</string>
+    <string name="get_reset_code">获取校验码</string>
+    <string name="reget_reg_code">重新获取</string>
+    <string name="reset_password">重置密码</string>
+
+    <string name="create_address">新建地址</string>
+    <string name="collection_name">收货人姓名</string>
+    <string name="collection">收货人</string>
+    <string name="country">国家</string>
+    <string name="province">省/市</string>
+    <string name="detail_address">详细地址</string>
+
+
+    <!-- Order strings -->
+    <string name="create_order">创建订单</string>
+    <string name="create_order_description">订单描述</string>
+    <string name="all_orders">全部订单</string>
+    <string name="order_to_pay">等待付款</string>
+    <string name="order_to_deliver">等待发货</string>
+    <string name="order_to_collect">等待收货</string>
+    <string name="order_to_comment">等待评价</string>
+    <string name="order_to_confirm">等待确认</string>
+    <string name="order_state">订单状态</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_detail2">订单描述</string>
+    <string name="submit_order">确认下单</string>
+    <string name="order_seller">卖家</string>
+    <string name="order_buyer">买家</string>
+    <string name="order_traveller">代购人</string>
+    <string name="order_owner">订购人</string>
+    <string name="pay_order">付款</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="delete_order">删除订单</string>
+    <string name="confirm_order">确认订单</string>
+    <string name="order_quantity_label1">共计商品:</string>
+    <string name="order_quantity_label2">件</string>
+    <string name="order_price_label">合计价格:</string>
+    <string name="order_detail_address">收货地址</string>
+    <string name="collection_place">填写收货地址</string>
+    <string name="collection_place2">填写详细收货地址</string>
+    <string name="remarks">备注</string>
+    <string name="cost">费用</string>
+    <string name="product_price">商品价格</string>
+    <string name="service_charge">服务费</string>
+    <string name="confirm_order2">确认收单</string>
+    <string name="confirm_deliver">确认发货</string>
+    <string name="confirm_collect">确认收货</string>
+    <string name="buyer_price">买方出价(单件):</string>
+    <string name="seller_price">卖方议价</string>
+    <string name="negotiated_price">最终定价(单件)</string>
+    <string name="checkout_counter">收银台</string>
+    <string name="order_number">订单编号: </string>
+
+    <!-- Payment -->
+    <string name="payment_account2">支付账号</string>
+    <string name="payment_login_pwd">登录密码</string>
+    <string name="payment_method">支付方式</string>
+    <string name="payment_action">去付款</string>
+    <string name="alipay_payment_method">支付宝支付</string>
+    <string name="other_payment_method">其它支付</string>
+
+    <!-- Language -->
+    <string name="language_code">zh-s</string>
+
+    <!-- Image Browse -->
+    <string name="only_choose_num1">只可选</string>
+    <string name="only_choose_num2">张图片了</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="choose_album">从相册中选取</string>
+    <string name="demand_no_photo">该需求没有照片</string>
+    <string name="iti_no_photo">该行程没有照片</string>
+
+    <!-- Format -->
+    <string name="date_format">yyyy年MM月dd日</string>
+    <string name="date_format2">yyyy-MM-dd hh:mm:ss</string>
+    <string name="long_date_format" translatable="false">yyyyMMddHHmmss</string>
+
+    <!-- Hint -->
+    <string name="login_hint">用户名/邮箱</string>
+    <string name="enter_username_hint">请输入用户名</string>
+    <string name="enter_password_hint">请输入密码</string>
+    <string name="enter_password_hint2">请再次输入密码</string>
+    <string name="enter_email_hint">请输入绑定邮箱地址</string>
+    <string name="enter_email_hint2">请输入邮箱地址</string>
+    <string name="enter_reg_code">请输入校验码</string>
+    <string name="enter_reset_code">请输入校验码</string>
+    <string name="modify_email_hint">绑定邮箱最好已绑定手机</string>
+    <string name="modify_email_hint_2">我们已经发送了校验码到你的邮箱:</string>
+    <string name="surname">姓</string>
+    <string name="name">名</string>
+    <string name="fillWithSource">填写出发地</string>
+    <string name="fillWithDestination">填写目的地</string>
+    <string name="fillWithStartTime">填写出发时间</string>
+    <string name="fillWithArriveTime">填写到达时间</string>
+    <string name="fillWithDetail">填写详细描述</string>
+    <string name="fillWithServiceFee">填写服务费</string>
+    <string name="fillWithPriorityThing">填写优先携带物品</string>
+    <string name="fillWithMaxWeight">填写携带物品最大质量</string>
+    <string name="fillWithChang">长</string>
+    <string name="fillWithKuan">宽</string>
+    <string name="fillWithGao">高</string>
+    <string name="fillWithProductName">填写物品名称</string>
+    <string name="fillWithKind">填写物品类别</string>
+    <string name="fillWithReceivePlace">填写收货地(城市)</string>
+    <string name="fillWithExpectTime">填写预期时间</string>
+    <string name="fillWithBrand">填写品牌</string>
+    <string name="fillWithOriginPlace">填写原产地(国家)</string>
+    <string name="fillWithNum">填写数量</string>
+    <string name="fillWithPrice">填写单件价格</string>
+    <string name="fillWithDescription">填写描述</string>
+    <string name="payment_account_hint">邮件／手机号</string>
+
+    <!-- Toast Messages -->
+    <string name="notif_unkown_failure">出现未知错误</string>
+    <string name="notif_get_reg_code_failed">网络不给力，无法获取校验码</string>
+    <string name="notif_get_reg_code_duplicated">校验码已发送</string>
+    <string name="notif_get_reg_code_succeed">校验码已发送，请查看邮件</string>
+    <string name="notif_create_subscriber_failed">网络不给力，注册用户失败</string>
+    <string name="notif_create_subscriber_no_reg_code">注册用户失败, 请获取验证码</string>
+    <string name="notif_create_subscriber_time_expired">验证码过期，请重新获取</string>
+    <string name="notif_create_subscriber_user_exists">用户已存在</string>
+    <string name="notif_create_subscriber_not_match">校验码不匹配</string>
+    <string name="notif_update_subscriber_succeed">用户信息已更新</string>
+    <string name="notif_update_subscriber_failed">网络不给力，更新用户信息失败</string>
+    <string name="notif_login_failed">登录失败</string>
+    <string name="notif_wechat_login_failed">微信登录失败</string>
+    <string name="notif_get_demand_failed">网络不给力，稍后再试</string>
+    <string name="notif_get_trip_failed">网络不给力，稍后再试</string>
+    <string name="notif_email_notnull">邮箱不能为空</string>
+    <string name="notif_username_notnull">用户名不能为空</string>
+    <string name="notif_reg_code_notnull">验证码不能为空</string>
+    <string name="notif_password_with_one_digit_letter">密码至少包含一个字母和数字</string>
+    <string name="notif_password_more_than_eight">密码不能少于8位</string>
+    <string name="notif_password_not_match">密码输入不匹配</string>
+    <string name="notif_account_notnull">账号不能为空</string>
+    <string name="notif_password_notnull">密码不能为空</string>
+    <string name="notif_productname_notnull">产品名字不能为空</string>
+    <string name="notif_quantity_notnull">数量不能为空</string>
+    <string name="notif_departure_notnull">出发地不能为空</string>
+    <string name="notif_destination_notnull">目的地不能为空</string>
+    <string name="notif_startTime_notnull">出发时间不能为空</string>
+    <string name="notif_arriveTime_notnull">到达时间不能为空</string>
+    <string name="notif_startTime_before_arriveTime">到达时间必须在出发时间之后</string>
+    <string name="notif_currentTime_before_selectTime">到达时间必须在出发时间之后</string>
+    <string name="notif_collectionLocation_notnull">收货地不能为空</string>
+    <string name="notif_min_price_notnull">最低价格不能为空</string>
+    <string name="notif_max_price_notnull">最高价格不能为空</string>
+    <string name="notif_final_price_notnull">价格不能为空</string>
+    <string name="notif_minmax_price_notgood">最低价格不能高于最高价格</string>
+    <string name="notif_brand_notnull">品牌不能为空</string>
+    <string name="notif_origin_notnull">原产地不能为空</string>
+    <string name="notif_expectTime_notnull">预期时间不能为空</string>
+    <string name="notif_create_demand_failed">网络不给力，请过一会儿告诉我你想买什么</string>
+    <string name="notif_create_demand_succeed">你想买的大家都知道了</string>
+    <string name="notif_create_iti_failed">网络不给力，请过一会儿告诉我你的行踪</string>
+    <string name="notif_create_iti_succeed">你的行踪大家都知道了</string>
+    <string name="notif_sdcard_invalid">SD Card无效或者没插入</string>
+    <string name="notif_take_photo_invalid">无法选择所拍照片文件</string>
+    <string name="notif_get_demand_list_failed">网络不给力，不能刷新需求信息</string>
+    <string name="notif_get_trip_list_failed">网络不给力，不能刷新行程信息</string>
+    <string name="notif_get_order_list_failed">网络不给力，不能刷新订单信息</string>
+    <string name="notif_create_order_failed">网络不给力，请稍后再下单</string>
+    <string name="notif_create_order_succeed">你的订单已提交，请等待对方确认后再付款</string>
+    <string name="notif_update_order_failed">网络不给力，不能更新订单信息</string>
+    <string name="notif_update_order_succeed">订单已更新</string>
+    <string name="notif_get_address_list_failed">你还没有添加地址</string>
+    <string name="notif_address_receiver_notnull">请填写收货人</string>
+    <string name="notif_address_phonenumber_notnull">请填写电话号码</string>
+    <string name="notif_address_detail_notnull">请填写详细地址</string>
+    <string name="notif_request_failed_common">网络不给力，请稍后再试...</string>
+    <string name="notif_create_address_succeed">新地址已添加</string>
+    <string name="notif_get_recover_code_failed">用户不存在</string>
+    <string name="notif_recover_password_failed">网络不给力，稍后再试</string>
+    <string name="notif_recover_password_succeed">密码已修改成功，请用新密码登录</string>
+    <string name="notif_email_format_error">邮件格式错误</string>
+    <string name="notif_im_disabled">当前账户聊天不可用</string>
+    <string name="notif_get_payment_list_failed">你还没有添加支付方式</string>
+    <string name="notif_payment_account_notnull">支付账号不能为空</string>
+    <string name="notif_add_payment_method_succeed">新支付信息已添加</string>
+    <string name="notif_payment_succeed">支付成功</string>
+    <string name="notif_payment_in_process">支付结果确认中</string>
+    <string name="notif_payment_failed">支付失败</string>
+    <string name="notif_order_created">您收到一个订单</string>
+    <string name="notif_order_confirmed">您的订单已确认</string>
+    <string name="notif_order_paid">订单已付款</string>
+    <string name="notif_order_delivered">订单物品已发货</string>
+    <string name="notif_order_collected">订单物品已收货</string>
+    <string name="notif_order_refunded">订单已退款</string>
+
+    <!-- Filter -->
+    <string-array name="demand_filter">
+        <item name="category_filter">类别</item>
+        <item name="origin_filter">原产地</item>
+        <item name="clocation_filter">收货地</item>
+    </string-array>
+
+    <string-array name="itinerary_filter">
+        <item name="departure_filter">出发地</item>
+        <item name="arrival_filter">目的地</item>
+        <item name="category_filter">类别</item>
+        <item name="arrival_time_filter">到达时间</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item name="all">全部</item>
+        <item name="austria">奥地利</item>
+        <item name="australia">澳大利亚</item>
+        <item name="canada">加拿大</item>
+        <item name="china">中国</item>
+        <item name="france">法国</item>
+        <item name="germany">德国</item>
+        <item name="italy">意大利</item>
+        <item name="japan">日本</item>
+        <item name="korea">韩国</item>
+        <item name="netherlands">荷兰</item>
+        <item name="spain">西班牙</item>
+        <item name="usa">美国</item>
+        <item name="uk">英国</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item name="all">全部</item>
+        <item name="vienna">维也纳</item>
+        <item name="sydney">悉尼</item>
+        <item name="melbourne">墨尔本</item>
+        <item name="montreal">蒙特利尔</item>
+        <item name="toronto">多伦多</item>
+        <item name="vancouver">温哥华</item>
+        <item name="beijing">北京</item>
+        <item name="shanghai">上海</item>
+        <item name="guangzhou">广州</item>
+        <item name="hongkong">香港</item>
+        <item name="taipei">台北</item>
+        <item name="nanjing">南京</item>
+        <item name="hangzhou">杭州</item>
+        <item name="shenyang">沈阳</item>
+        <item name="shenzhen">深圳</item>
+        <item name="chongqing">重庆</item>
+        <item name="kunming">昆明</item>
+        <item name="paris">巴黎</item>
+        <item name="nice">尼斯</item>
+        <item name="marseille">马赛</item>
+        <item name="munich">慕尼黑</item>
+        <item name="berlin">柏林</item>
+        <item name="frankfurt">法兰克福</item>
+        <item name="rome">罗马</item>
+        <item name="tokyo">东京</item>
+        <item name="seoul">首尔</item>
+        <item name="amsterdam">阿姆斯特丹</item>
+        <item name="madrid">马德里</item>
+        <item name="barcelona">巴塞罗那</item>
+        <item name="boston">波士顿</item>
+        <item name="new_york">纽约</item>
+        <item name="miami">迈阿密</item>
+        <item name="seattle">西雅图</item>
+        <item name="san_francisco">旧金山</item>
+        <item name="los_angeles">洛杉矶</item>
+        <item name="london">伦敦</item>
+        <item name="manchester">曼彻斯特</item>
+        <item name="liverpool">利物浦</item>
+    </string-array>
+
+    <string-array name="arrivaltimes">
+        <item name="all">不限</item>
+        <item name="last_arrival">最晚到达</item>
+        <item name="first_arrival">最近到达</item>
+    </string-array>
+
+    <string name="show_version">版本</string>
+    <string name="show_terms_conditions">免责声明</string>
+    <string name="show_privacy">隐私权声明</string>
+    <string name="version">Version 1.0.0</string>
+    <string name="version_title">Product Version</string>
+    <string name="terms">免责条款</string>
+    <string name="title_terms">免责声明</string>
+    <string name="privacy">隐私权条款</string>
+    <string name="title_privacy">隐私权声明</string>
+    <string name="Help_content">
+        <b><i>How to publish an order</i></b>
+        \n
+        \n
+    Click Publish
+        \n
+    Select Publish Order
+        \n
+    Enter information in relevant fields
+        \n
+    Attach picture of the desired product
+        \n
+    Click Confirm
+        \n
+        \n
+        \n
+<b><i>How to publish an itinerary</i></b>
+        \n
+            Click Publish
+        \n
+    Select Publish My Itinerary
+        \n
+    Enter information in relevant fields
+        \n
+    Click Confirm
+    </string>
+
+    <string name="scrolling_text">
+        Have you ever had an anxiety attack? One of those full-blown panic freakouts: Your hands are tingling, your head is swimming, your skin is crawling and — my God — you want to run away, but you can’t, so you crumple wherever you are, even if that means at your desk, in front of your entire office. How long does it last? Hours, days. Maybe it dissipates for a time and then you bolt upright sweating at 3:17 a.m., gulping for air in the darkness. Eventually it retreats, but never completely. Somewhere in the recesses of your mind, anxiety is still tucked away, quietly at work, plotting its next strike.
+
+If you don’t suffer from anxiety, an ant infestation is a great substitute. Ants, like anxieties, come in two quantities: one and infinity. An ant, like a single preoccupation, is a manageable thing. Breathe, call a friend, walk around the block, pop a benzo. But when all your anxieties descend at once? It’s like having an ant queen inside your chest, sending her minions forth to colonize your brain.
+
+Picture this: It’s morning. You’ve wandered sleepily into your kitchen. You reach for the coffee maker next to the sink, and you see two ants cruising around on the counter to your right. You figure them to be scouts, so you dispatch them with a squish, and wipe down the counter, just in case. You reach again to fill the carafe when movement in the corner of your eye draws your attention to another few ants on the counter to your left. Ugh, you think, as you squish and wipe again, and that’s when you see it: the trail, stretching along the counter and down the wall, a superhighway of tiny soldiers marching inexorably onward in either direction. It’s coming from inside the damn wall, this seething black torrent of insects, who replenish their numbers faster than you can kill them. You squash and wipe and spray Windex and squash and wipe and spray, but with each purge, you can feel their compatriots crawling on your hands, arms, neck, face. They are everywhere. What if there is no end? Will you have to burn down your own home?
+
+There’s no shortage of suggestions on the Internet for how to manage anxieties and ants. Try these herbs! Consider juicing! Get over it! Oh, you mean ants? Try peppermint oil, lemon juice, coffee grounds. Sprinkle cinnamon. Draw chalk lines. Spray Raid and then wonder what’s in Raid and whether you should be inhaling it. Beg the ants to move into your neighbor’s house. None of this works.
+
+But one thing seems to: Terro Liquid Ant Bait. This is not your usual trap — those black plastic ant yurts no self-respecting ant would ever enter. Terro comes in a plastic rectangle with two compartments, which together make up a minimalist slaughterhouse. One side is filled with a syrupy liquid, a sugar solution with borax. The other forms a small ramp leading into the solution.
+
+Of the remedies that have been suggested for coping with anxiety, no one ever mentioned ‘‘wreaking death and destruction.’’ But I have to admit that I found it an unlikely meditative place, in part because Terro’s peculiar mode of destruction forces you to confront your fears immediately.
+
+The first time you use the bait, it will be awful. You’ll think it’s not going to work, not in a million years. Because initially, you’ll attract even more ants into your home. It’s like ordering a hundred pizzas from the best place in town, telling one or two co-workers, then standing in the break room to watch. (On Amazon, where 77 percent of reviewers give Terro a perfect five-star rating, one referred to it as a ‘‘kegger for ants.’’) That’s what the boxes look like for the first few days. The ants are drawn to the sweet sticky solution and ingest the borax. That chemical wreaks havoc on the digestive system of an ant, but it acts slowly, allowing the ant to leave a trail of pheromones to the trap, luring yet more ants into its grasp.
+
+Sometimes Terro works very slowly. It can take weeks to make a noticeable dent in your infestation. When I deploy a Terro box to kill another tranche of ants, I know I cannot kill all of them, at least not right now. Not in Berkeley, where we have Argentine ants — a small, invasive species that lives in shallow nests but also takes over other, larger ants’ nests. There is a single Argentine ant colony, a megacolony, that stretches 560 miles up the California coast. Even if I destroy a nest in the wall of my house or one in the backyard, more ants will soon arrive to take their place. Each time I patiently breathe through another onslaught, I feel as if I’ve learned to live with them, if not peacefully then a little more easily. I give it time, and do a lot of deep breathing. I try to be patient. And I’ve found that this discipline has made me better able to sit and wait in other anxious situations.
+
+Ants are a problem that can’t be fixed in one go. Like anxiety, they will come and go and probably come again. The trick with both is to remember how you handled the situation last time. Rather than panicking, you must calmly walk through a set of practiced steps, even if they seem as if they’ll never work. They do, and they will — and that’s the only way out.
+    </string>
+
+</resources>

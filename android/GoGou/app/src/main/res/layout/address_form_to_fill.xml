@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/list_item_padding_top_bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@drawable/order_form_layout_bg1">
+
+        <TextView
+            android:id="@+id/receive_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collection_place"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_form_layout_bg">
+
+        <TextView
+            android:id="@+id/collection_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/collection"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/addressReceiverSurname"
+            android:layout_width="@dimen/register_text_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/collection_text"
+            android:hint="@string/surname"/>
+
+        <EditText
+            android:id="@+id/addressReceiverName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/addressReceiverSurname"
+            android:hint="@string/name"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_form_layout_bg">
+
+        <TextView
+            android:id="@+id/receive_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_phone"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/addressPhoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_padding_left_right"
+            android:layout_toRightOf="@+id/receive_phone"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_form_layout_bg">
+
+        <EditText
+            android:id="@+id/addressDetail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_text"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:text=""
+            android:lines="3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:hint="@string/collection_place2"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

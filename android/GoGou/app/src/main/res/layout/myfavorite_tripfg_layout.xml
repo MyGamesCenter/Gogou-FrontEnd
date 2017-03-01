@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/myFavorite_trip_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#fff8f8"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:longClickable="true"
+        android:listSelector="@drawable/main_list_selector">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="CreateOrderTableViewCell0">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货人：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXu-YE-6ht">
+                        <rect key="frame" x="57" y="8" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Dy6-zB-AlM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货地址：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRx-GO-Dfl">
+                        <rect key="frame" x="57" y="31" width="85" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="c2v-zH-tuX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Letian Xu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02g-fn-jIn">
+                        <rect key="frame" x="121" y="7" width="191" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海市闵行区江川路街道东川路800号上海交通大学软件大楼5406" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa7-nw-e3N">
+                        <rect key="frame" x="57" y="53" width="255" height="55"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.35101010101010099" green="0.35101010101010099" blue="0.35101010101010099" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_room" translatesAutoresizingMaskIntoConstraints="NO" id="cIe-ws-MS9">
+                        <rect key="frame" x="8" y="8" width="41" height="41"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="02g-fn-jIn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="3I1-Br-JQY"/>
+                    <constraint firstItem="Pa7-nw-e3N" firstAttribute="top" secondItem="cRx-GO-Dfl" secondAttribute="bottom" constant="1" id="4oc-08-KSK"/>
+                    <constraint firstItem="Pa7-nw-e3N" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="4q2-Aq-KPh"/>
+                    <constraint firstItem="yXu-YE-6ht" firstAttribute="leading" secondItem="cIe-ws-MS9" secondAttribute="trailing" constant="8" symbolic="YES" id="5s8-uV-fDG"/>
+                    <constraint firstItem="Pa7-nw-e3N" firstAttribute="leading" secondItem="cRx-GO-Dfl" secondAttribute="leading" id="7Jg-jN-CrC"/>
+                    <constraint firstItem="cRx-GO-Dfl" firstAttribute="top" secondItem="02g-fn-jIn" secondAttribute="bottom" constant="3" id="Cgg-fh-4aL"/>
+                    <constraint firstItem="cIe-ws-MS9" firstAttribute="top" secondItem="yXu-YE-6ht" secondAttribute="top" id="JOw-J4-srd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Pa7-nw-e3N" secondAttribute="bottom" constant="1.5" id="MoE-Ce-fFq"/>
+                    <constraint firstItem="Pa7-nw-e3N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="49" id="QUC-W1-Ygc"/>
+                    <constraint firstItem="02g-fn-jIn" firstAttribute="leading" secondItem="cIe-ws-MS9" secondAttribute="trailing" constant="72" id="WW8-Ka-xio"/>
+                    <constraint firstItem="cIe-ws-MS9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ay4-Ak-qwg"/>
+                    <constraint firstItem="cRx-GO-Dfl" firstAttribute="top" secondItem="yXu-YE-6ht" secondAttribute="bottom" constant="2" id="czJ-ZU-De2"/>
+                    <constraint firstItem="yXu-YE-6ht" firstAttribute="leading" secondItem="cRx-GO-Dfl" secondAttribute="leading" id="ge7-1Y-q5z"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cIe-ws-MS9" secondAttribute="bottom" constant="60.5" id="mO9-Rk-1pK"/>
+                    <constraint firstItem="Pa7-nw-e3N" firstAttribute="trailing" secondItem="02g-fn-jIn" secondAttribute="trailing" id="xEf-xD-rdy"/>
+                    <constraint firstItem="cIe-ws-MS9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="yYP-f4-q99"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="AddressImageView" destination="cIe-ws-MS9" id="uVk-8M-YMb"/>
+                <outlet property="ReceiveAddressKeyLabel" destination="cRx-GO-Dfl" id="Wbp-uQ-RvJ"/>
+                <outlet property="ReceiveAddressValueLabel" destination="Pa7-nw-e3N" id="X7b-bV-By8"/>
+                <outlet property="ReceiverLabel" destination="yXu-YE-6ht" id="p11-ai-L5s"/>
+                <outlet property="ReceiverNameLabel" destination="02g-fn-jIn" id="wrV-6t-hR2"/>
+            </connections>
+            <point key="canvasLocation" x="408" y="448"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_room" width="24" height="24"/>
+    </resources>
+</document>

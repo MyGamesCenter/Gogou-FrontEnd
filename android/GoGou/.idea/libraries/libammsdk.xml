@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libammsdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/src/main/java/info/gogou/gogou/lib/libammsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

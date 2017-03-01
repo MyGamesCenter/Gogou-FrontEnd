@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E0E0E0</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="publish_editor_text">#4856ee</color>
+    <color name="lightPink">#F8E0F1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="toolbarTextColor">#FFFFFF</color>
+    <color name="releaseChoiceButtonColor">#6200ea</color>
+    <color name="textViewColor">#1565c0</color>
+    <color name="buttonColor">#1565c0</color>
+    <color name="editTextColor">#90caf9</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="orange">#F6A567</color>
+    <color name="gray">#b3b9b3</color>
+</resources>
+

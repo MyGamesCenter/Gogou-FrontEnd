@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.AddPaymentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/addPaymentActivityToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appMainColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <Button
+                android:id="@+id/addPaymentBackButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backward"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_width="112dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="@drawable/alipay_logo"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_padding_top_bottom"
+           >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg1"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/paymentAccountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/payment_account2"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <EditText
+                    android:id="@+id/paymentAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_toRightOf="@+id/paymentAccountLabel"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:layout_marginRight="@dimen/button_padding_left_right"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/payment_account_hint"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/paymentLoginPwdLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/payment_login_pwd"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <EditText
+                    android:id="@+id/paymentLoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_toRightOf="@+id/paymentLoginPwdLabel"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:layout_marginRight="@dimen/button_padding_left_right"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_password_hint"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/layout_padding_top_bottom2">
+
+            <Button
+                android:id="@+id/confirmAddPaymentButton"
+                android:background="@drawable/gogou_main_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginRight="@dimen/button_padding_left_right"
+                android:text="@string/confirm"
+                android:textSize="@dimen/list_item_title"
+                android:textColor="@color/buttonTextColor" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

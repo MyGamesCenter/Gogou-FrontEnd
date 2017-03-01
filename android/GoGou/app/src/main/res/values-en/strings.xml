@@ -1,0 +1,439 @@
+﻿<resources>
+    <string name="app_name">GoGou</string>
+    <string name="action_settings">Settings</string>
+    <string name="iti_from">Origin</string>
+    <string name="iti_to">Destination</string>
+    <string name="product_category">Cat.</string>
+    <string name="select">Select</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register</string>
+    <string name="email">E-mail</string>
+    <string name="passconfirm">Confirm Password</string>
+    <string name="scheduledetail">Schedule Detail</string>
+    <string name="departure_time">Dep. Time</string>
+    <string name="arrival_time">Arr. Time</string>
+    <string name="maxweight">Weight(kg)</string>
+    <string name="maxvolume">Volume(cm3)</string>
+    <string name="preferred_category">Priority Sort</string>
+    <string name="detailedinformation">Detailed description</string>
+    <string name="contact_traveller">Contact</string>
+    <string name="myschedule">Publish my Itinerary</string>
+    <string name="schedule">Published Trips</string>
+    <string name="description">Description</string>
+    <string name="requirement">Requested Items</string>
+    <string name="confirm">Confirm</string>
+    <string name="mymessage">My Messages</string>
+    <string name="otherlogin">Other Login</string>
+    <string name="phonenumber">PhoneNumber(Optional)</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Adress(Optional)</string>
+    <string name="Address">Address</string>
+    <string name="i_buy">I want to buy</string>
+    <string name="collect_location1">Dest.</string>
+    <string name="expecttime">ETA</string>
+    <string name="brand">Brand</string>
+    <string name="product_origin1">Origin</string>
+    <string name="number">Number</string>
+    <string name="price">Price</string>
+    <string name="shoppingdetail">Shopping Detail</string>
+    <string name="contact_requester">Contact Buyer</string>
+    <string name="order">Order</string>
+    <string name="home">Home</string>
+    <string name="buysome">Publish an order</string>
+    <string name="kind">Kind</string>
+    <string name="hignscore">Rating</string>
+    <string name="lowfee">Cost</string>
+    <string name="hignfee">Cost</string>
+    <string name="mySetting">My Setting</string>
+    <string name="publish">I want to post</string>
+
+    <string name="schedule_release_text">Post My Schedure(NeedIDPhoto)</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="myOrder">My Order</string>
+    <string name="myFavorite">My Favorite</string>
+    <string name="myRelease">My Release</string>
+    <string name="help">Help</string>
+    <string name="mysetting">My Setting</string>
+    <string name="setting">OK</string>
+    <string name="about">About</string>
+
+    <string name="fillWithSource">Departure City</string>
+    <string name="fillWithDestination">Destination City</string>
+    <string name="fillWithStartTime">Departure Time</string>
+    <string name="fillWithArriveTime">Arrival Time</string>
+    <string name="fillWithDetail">Description</string>
+    <string name="fillWithServiceFee">Service Fee</string>
+    <string name="fillWithPriorityThing">Preferred Objects</string>
+    <string name="fillWithMaxWeight">MaximumWeight</string>
+    <string name="fillWithChang">L</string>
+    <string name="fillWithKuan">W</string>
+    <string name="fillWithGao">H</string>
+
+    <string name="fillWithKind">Goods Category</string>
+    <string name="fillWithReceivePlace">Destination City</string>
+    <string name="fillWithExpectTime">Expected Reception Time</string>
+    <string name="fillWithBrand">Brand</string>
+    <string name="fillWithOriginPlace">Product Origin(Country)</string>
+    <string name="fillWithNum">Number</string>
+    <string name="fillWithPrice">Acceptable Price per piece</string>
+    <string name="fillWithDescription">Description</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ipaddress">IP Address</string>
+
+    <string name="create_order">Create Order</string>
+    <string name="create_order_description">Order Description</string>
+
+    <string name="notif_email_notnull">Email Adress Invalid</string>
+    <string name="notif_username_notnull">User Name Invalid</string>
+    <string name="notif_password_with_one_digit_letter">You need at least one number and character in Password</string>
+    <string name="notif_password_more_than_eight">You need at least 8 characters in Password</string>
+    <string name="notif_password_not_match">Password does match</string>
+    <string name="notif_account_notnull">Account Number Invalid</string>
+    <string name="notif_password_notnull">Password Invalid</string>
+    <string name="notif_productname_notnull">Product Name Invalid</string>
+    <string name="notif_quantity_notnull">Number Invalid</string>
+    <string name="notif_departure_notnull">Departure City Invalid</string>
+    <string name="notif_destination_notnull">Arrive City Invalid</string>
+    <string name="notif_startTime_before_arriveTime">Arrival Time should be after Departure Time</string>
+    <string name="notif_currentTime_before_selectTime">Arrival Time should be After Departure Time</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="year_format">-</string>
+    <string name="month_format">-</string>
+    <string name="day_format">-</string>
+    <string name="submit">Submit</string>
+    <string name="select_time">ChooseTime</string>
+    <string name="login_now">Go to login</string>
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to send downstream messages to this app.</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token, sending the fetched token to the server or subscribing to the PubSub topic. Please try running the sample again.</string>
+    <string name="category_wine">Wine</string>
+    <string name="category_alcohol">Alcohol</string>
+    <string name="category_baby_product">Baby Product</string>
+    <string name="category_bag">Bag</string>
+    <string name="category_clothes">Clothes</string>
+    <string name="category_local_specialties">Local Specialities</string>
+    <string name="category_health">Health Products</string>
+    <string name="category_beauty">Beauty Products</string>
+    <string name="category_toys">Toys</string>
+    <string name="category_electronics">Electronics</string>
+    <string name="category_computer">Computer</string>
+    <string name="category_jewellery">Jewellery</string>
+    <string name="category_shoe">Shoes</string>
+    <string name="category_watch">Watches</string>
+    <string name="category_sports_fitness">Fitness Products</string>
+    <string name="category_tobaco">Tobacco</string>
+    <string name="category">Categoty</string>
+    <string name="date_format2">yyyy-MM-dd hh:mm:ss</string>
+    <string name="chat_send">Send</string>
+
+    <string name="all_orders">All Orders</string>
+    <string name="confirm_order">Confirm Order</string>
+
+    <string name="order_seller">Seller</string>
+    <string name="order_buyer">Buyer</string>
+    <string name="order_detail2">OrderDetail</string>
+    <string name="language_code">en-us</string>
+	
+    <string name="show_version">Show Version</string>
+    <string name="show_terms_conditions">Show Terms and Conditions</string>
+    <string name="show_privacy">Show Privacy Policy</string>
+    <string name="version">Version 1.0.0</string>
+    <string name="version_title">Product Version</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="title_terms">Terms and Conditions</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="title_privacy">Privacy Policy</string>
+    <string name="Help_content">
+        <b><i>How to publish an order</i></b>
+        \n
+        \n
+    Click Publish
+        \n
+    Select Publish Order
+        \n
+    Enter information in relevant fields
+        \n
+    Attach picture of the desired product
+        \n
+    Click Confirm
+        \n
+        \n
+        \n
+<b><i>How to publish an itinerary</i></b>
+        \n
+        \n
+            Click Publish
+        \n
+    Select Publish My Itinerary
+        \n
+    Enter information in relevant fields
+        \n
+    Click Confirm
+    </string>
+    <string name="ModifyPhone">Change mobile number</string>
+    <string name="account_and_security">Account and Security</string>
+    <string name="album">Album</string>
+    <string name="arrivalDate_label">Arr. Time: </string>
+    <string name="avatar">Avatar</string>
+    <string name="camera_cancel">Cancel</string>
+    <string name="collect_location">Collect Location: </string>
+    <string name="collection_name">Receiver Name</string>
+    <string name="confirm_new_password">Confirm</string>
+    <string name="confirm_submit">Confirm</string>
+    <string name="country">Country</string>
+    <string name="create_address">Add address</string>
+    <string name="departDate_label">Dep. Time: </string>
+    <string name="departure_label">Departure: </string>
+    <string name="destination_label">Destination: </string>
+    <string name="detail_address">Address details</string>
+    <string name="emailAddress">E-mail</string>
+    <string name="fillWithProductName">Product Name</string>
+    <string name="finish">Finish</string>
+    <string name="gender">Gender</string>
+    <string name="invalidSD">Sdcard invalid</string>
+    <string name="myAddress">My Address</string>
+    <string name="newPhoneNumber">Add phone </string>
+    <string name="new_password">Enter new password</string>
+    <string name="no_photo">There is no photo in album</string>
+    <string name="notif_collectionLocation_notnull">Collect location can not be empty</string>
+    <string name="origin_password">Enter old password</string>
+    <string name="payment_account">My payment account:</string>
+    <string name="payment_info">My payment info</string>
+    <string name="personal_document">Personal Information</string>
+    <string name="phoneNumber">Phone number</string>
+    <string name="photo">Choose album</string>
+    <string name="preview">Preview</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_origin">Made in: </string>
+    <string name="province">Province</string>
+    <string name="scrolling_text">test</string>
+    <string name="take_photo">Take photo</string>
+    <string name="unfinished">finish</string>
+    <string name="ModifyEmail">Change Email Address</string>
+    <string name="ModifyPassword">Change login password</string>
+    <string name="product_price">Product Price</string>
+    <string name="remarks">Remarks</string>
+    <string name="service_charge">Service Fee</string>
+    <string name="cost">Fee</string>
+    <string name="collection_place">Delivery Address</string>
+    <string name="collection">Receiver</string>
+    <string name="enter_email_hint">Enter email address</string>
+    <string name="modify_email_hint">Please use the email address added in this phone</string>
+    <string name="newEmail">New Email Address</string>
+    <string name="modify_email_hint_2">Checksum code is sent to the email:</string>
+    <string name="checksum">Security code</string>
+    <string name="reset_code">Reset code</string>
+    <string name="checksumPage">Security Check</string>
+    <string name="nextStep">Next Step</string>
+    <string name="choose_album">Choose from album</string>
+    <string name="notif_login_failed">Login Failed</string>
+    <string name="notif_wechat_login_failed">WeChat Login Failed</string>
+    <string name="order_state">Order State</string>
+    <string name="login_hint">Username/Email</string>
+    <string name="enter_password_hint">Enter password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="notif_create_demand_failed">Network is weak, please let me know what you want to buy later</string>
+    <string name="notif_create_demand_succeed">What you want to buy is now on public</string>
+    <string name="only_choose_num1">You can only choose</string>
+    <string name="only_choose_num2">pictures</string>
+    <string name="order_detail">Order Detail</string>
+    <string name="date_format">yyyy-MM-dd</string>
+    <string name="notif_create_iti_failed">Network is weak, please let me know your itinerary</string>
+    <string name="notif_create_iti_succeed">Your itinerary is now on public</string>
+    <string name="demand_no_photo">No Image</string>
+    <string name="enter_email_hint2">Enter email address</string>
+    <string name="enter_password_hint2">Confirm password</string>
+    <string name="enter_username_hint">Enter Username</string>
+    <string name="i_am_seller_label">I want to post trip</string>
+    <string name="iti_no_photo">No Image</string>
+    <string name="no_label">No</string>
+    <string name="notif_arriveTime_notnull">Arrival time can not be empty</string>
+    <string name="notif_brand_notnull">Brand can not be empty</string>
+    <string name="notif_expectTime_notnull">Expected time can not be empty</string>
+    <string name="notif_get_demand_failed">Please try later when network is good</string>
+    <string name="notif_get_trip_failed">Please try later when network is good</string>
+    <string name="notif_origin_notnull">Product origin can not be empty</string>
+    <string name="notif_startTime_notnull">Departure time can not be empty</string>
+    <string name="password_confirm">Confrim Password</string>
+    <string name="yes_label">Yes</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="collection_place2">Enter address detail</string>
+    <string name="contact_phone">Mobile</string>
+    <string name="delete_order">Remove Order</string>
+    <string name="notif_create_order_failed">Network is week, please make an order later</string>
+    <string name="notif_create_order_succeed">Your order has been submitted, please wait for a confirmation and pay the order</string>
+    <string name="notif_get_demand_list_failed">Please try later when network is good</string>
+    <string name="notif_get_trip_list_failed">Please try later when network is good</string>
+    <string name="notif_max_price_notnull">Highest price can not be empty</string>
+    <string name="notif_min_price_notnull">Lowest price can not be empty</string>
+    <string name="notif_minmax_price_notgood">Lowest price can not be higher than highest price</string>
+    <string name="notif_sdcard_invalid">SD Card invalid or unplug in</string>
+    <string name="notif_take_photo_invalid">Can NOT select taken photo</string>
+    <string name="submit_order">Submit Order</string>
+    <string name="pay_order">Pay Order</string>
+    <string name="order_to_collect">Wait for collecting</string>
+    <string name="order_to_comment">Wait for comment</string>
+    <string name="order_to_confirm">Wait for confirmatioin</string>
+    <string name="order_to_deliver">Wait for delivery</string>
+    <string name="order_to_pay">Wait for pay</string>
+    <string name="order_traveller">On the way</string>
+    <string name="notif_get_address_list_failed">There is no address available.</string>
+    <string name="notif_get_order_list_failed">Please try later when network is good</string>
+    <string name="notif_request_failed_common">Please try later when network is good</string>
+    <string name="notif_update_subscriber_failed">Please try later when network is good</string>
+    <string name="notif_update_subscriber_succeed">Subscriber infomation has been updated</string>
+    <string name="order_detail_address">Address</string>
+    <string name="order_price_label">Total Price:</string>
+    <string name="order_quantity_label1">Quantity:</string>
+    <string name="order_quantity_label2">pieces</string>
+    <string name="surname">Surname</string>
+    <string name="female">female</string>
+    <string name="male">Male</string>
+    <string name="notif_address_detail_notnull">Please enter address detail</string>
+    <string name="notif_address_phonenumber_notnull">Please enter phone number</string>
+    <string name="notif_address_receiver_notnull">Please enter receiver name</string>
+    <string name="notif_create_address_succeed">New address has been added</string>
+    <string name="name">Name</string>
+    <string name="enter_reg_code">Enter security code</string>
+    <string name="enter_reset_code">Enter reset code</string>
+    <string name="get_reg_code">Get security code</string>
+    <string name="get_reset_code">Get reset code</string>
+    <string name="notif_create_subscriber_failed">Network is weak, registration failed</string>
+    <string name="notif_create_subscriber_no_reg_code">Registration failed, please get registration code first</string>
+    <string name="notif_create_subscriber_time_expired">Registration code expired, please get a new one</string>
+    <string name="notif_create_subscriber_user_exists">Subscriber already exists</string>
+    <string name="notif_get_reg_code_duplicated">Registration code has been sent</string>
+    <string name="notif_get_reg_code_failed">Network is weak, sending registration code failed</string>
+    <string name="notif_get_reg_code_succeed">Registration code has been sent, please check your email</string>
+    <string name="reget_reg_code">Get again</string>
+    <string name="notif_create_subscriber_not_match">Registration code not match</string>
+    <string name="notif_unkown_failure">Unkown error</string>
+    <string name="notif_reg_code_notnull">Registration code can not be empty</string>
+
+    <!-- Filter -->
+    <string-array name="demand_filter">
+        <item name="category_filter">Category</item>
+        <item name="origin_filter">Origin</item>
+        <item name="clocation_filter">Place of Receipt</item>
+    </string-array>
+
+    <string-array name="itinerary_filter">
+        <item name="departure_filter">Departure</item>
+        <item name="arrival_filter">Destination</item>
+        <item name="category_filter">Category</item>
+        <item name="arrival_time_filter">Arrival Time</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item name="all">All</item>
+        <item name="austria">Austria</item>
+        <item name="australia">Australia</item>
+        <item name="canada">Canada</item>
+        <item name="china">China</item>
+        <item name="france">France</item>
+        <item name="germany">Germany</item>
+        <item name="italy">Italy</item>
+        <item name="japan">Japan</item>
+        <item name="korea">Korea</item>
+        <item name="netherlands">Netherlands</item>
+        <item name="spain">Spain</item>
+        <item name="usa">United States</item>
+        <item name="uk">United Kingdom</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item name="all">All</item>
+        <item name="vienna">Vienna</item>
+        <item name="sydney">Sydney</item>
+        <item name="melbourne">Melbourne</item>
+        <item name="montreal">Montreal</item>
+        <item name="toronto">Toronto</item>
+        <item name="vancouver">Vancouver</item>
+        <item name="beijing">Beijing</item>
+        <item name="shanghai">Shanghai</item>
+        <item name="guangzhou">Guangzhou</item>
+        <item name="hongkong">Hong Kong</item>
+        <item name="taipei">Taipei</item>
+        <item name="nanjing">Nanjing</item>
+        <item name="hangzhou">hangzhou</item>
+        <item name="shenyang">Shenyang</item>
+        <item name="shenzhen">Shenzhen</item>
+        <item name="chongqing">Chongqing</item>
+        <item name="kunming">Kunming</item>
+        <item name="paris">Paris</item>
+        <item name="nice">Nice</item>
+        <item name="marseille">Marseille</item>
+        <item name="munich">Munich</item>
+        <item name="berlin">Berlin</item>
+        <item name="frankfurt">Frankfurt</item>
+        <item name="rome">Rome</item>
+        <item name="tokyo">Tokyo</item>
+        <item name="seoul">Seoul</item>
+        <item name="amsterdam">Amsterdam</item>
+        <item name="madrid">Madrid</item>
+        <item name="barcelona">Barcelona</item>
+        <item name="boston">Boston</item>
+        <item name="new_york">New York</item>
+        <item name="miami">Miami</item>
+        <item name="seattle">Seattle</item>
+        <item name="san_francisco">San Francisco</item>
+        <item name="los_angeles">Los Angeles</item>
+        <item name="london">London</item>
+        <item name="manchester">Manchester</item>
+        <item name="liverpool">Liverpool</item>
+    </string-array>
+
+    <string-array name="arrivaltimes">
+        <item name="all">All</item>
+        <item name="last_arrival">Latest Arrival</item>
+        <item name="first_arrival">Recent Arrival</item>
+    </string-array>
+
+
+    <string name="notif_email_format_error">Email format is not correct</string>
+    <string name="notif_get_recover_code_failed">User doesn\'t exist</string>
+    <string name="notif_recover_password_failed">Please try later when network is good</string>
+    <string name="notif_recover_password_succeed">Password has been changed, please use the password to login</string>
+    <string name="reset_password">Reset password</string>
+    <string name="notif_im_disabled">IM service disable</string>
+    <string name="confirm_collect">Confirm Received</string>
+    <string name="confirm_deliver">Confirm Delivered</string>
+    <string name="confirm_order2">Confirm Order Received</string>
+    <string name="myReceivedOrder">My Received Order</string>
+    <string name="notif_update_order_failed">Please try later when network is good</string>
+    <string name="notif_update_order_succeed">Order has been updated</string>
+    <string name="order_owner">Buyer</string>
+    <string name="add_payment">Add payment method</string>
+    <string name="buyer_price">Accepted price range (per piece):</string>
+    <string name="checkout_counter">Checkout Counter</string>
+    <string name="negotiated_price">Negotiated Price</string>
+    <string name="notif_add_payment_method_succeed">New payment method has been added</string>
+    <string name="notif_final_price_notnull">Price can not be empty</string>
+    <string name="notif_payment_account_notnull">Payment account can not be empty</string>
+    <string name="order_number">Order number:</string>
+    <string name="payment_account2">Payment account</string>
+    <string name="payment_account_hint">Email/Mobile Phone</string>
+    <string name="payment_action">Pay</string>
+    <string name="payment_login_pwd">Login password</string>
+    <string name="payment_method">Payment method</string>
+    <string name="alipay_payment_method">By Alipay</string>
+    <string name="other_payment_method">By other methods</string>
+    <string name="seller_price">Seller price</string>
+    <string name="notif_payment_failed">Payment failed</string>
+    <string name="notif_payment_in_process">Payment is in process</string>
+    <string name="notif_payment_succeed">Payment is successful</string>
+    <string name="notif_get_payment_list_failed">No payment method is found</string>
+    <string name="notif_order_collected">Ordered goods have been collected</string>
+    <string name="notif_order_confirmed">Your order has been confirmed</string>
+    <string name="notif_order_created">You have received an order</string>
+    <string name="notif_order_delivered">Ordered goods have been delivered</string>
+    <string name="notif_order_paid">Order has been paid</string>
+    <string name="notif_order_refunded">Order has been refunded</string>
+    <string name="i_travel">I want to travel</string>
+</resources>

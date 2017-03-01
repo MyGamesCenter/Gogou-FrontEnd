@@ -1,0 +1,39 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+#use_frameworks!
+
+target 'GoGou' do
+    
+pod 'RongCloudIMKit', '~> 2.3.9'
+pod 'MBSimpleLoadingIndicator'
+pod 'BPForms', '~> 2.1.1'
+pod 'MSDynamicsDrawerViewController', '~> 1.5.1'
+pod 'AMBubbleTableViewController', '~> 0.5.4'
+pod 'DOPDropDownMenu-Enhanced', '~> 1.0.0'
+pod 'IQKeyboardManager', '~> 3.3.4'
+pod 'SDWebImage', '~> 3.7.3'
+pod 'DACircularProgress', '~> 2.3.1'
+pod 'WZLBadge', '~> 1.2.1'
+pod 'BBBadgeBarButtonItem', '~> 1.2'
+pod 'TDBadgedCell', '~> 3.0'
+pod 'RestKit', '~> 0.24.0'
+pod 'MJRefresh', '~> 3.0.7'
+pod 'CZPicker'
+pod 'RWDropdownMenu', '~> 1.0.3'
+pod 'JJMaterialTextField'
+pod 'Toast', '~> 3.0'
+
+# Testing and Search are optional components
+pod 'RestKit/Testing', '~> 0.24.0'
+pod 'RestKit/Search',  '~> 0.24.0'
+end
+
+target 'GoGouTests' do
+
+end
+
+target 'GoGouUITests' do
+
+end
+

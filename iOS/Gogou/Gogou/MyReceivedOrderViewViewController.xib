@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyReceivedOrderViewViewController">
+            <connections>
+                <outlet property="segmentedControl" destination="LEi-cN-jVq" id="Iuh-lh-iyD"/>
+                <outlet property="tableView" destination="1Ov-qW-413" id="ejx-Kw-0pD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LEi-cN-jVq">
+                    <rect key="frame" x="8" y="73" width="584" height="29"/>
+                    <segments>
+                        <segment title="全部订单"/>
+                        <segment title="等待确认"/>
+                        <segment title="等待发货"/>
+                        <segment title="等待评价"/>
+                    </segments>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Ov-qW-413">
+                    <rect key="frame" x="0.0" y="109" width="600" height="465"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1Ov-qW-413" secondAttribute="bottom" constant="26" id="A6a-dH-xwy"/>
+                <constraint firstAttribute="trailing" secondItem="LEi-cN-jVq" secondAttribute="trailing" constant="8" id="BeL-dP-aPg"/>
+                <constraint firstAttribute="trailing" secondItem="1Ov-qW-413" secondAttribute="trailing" id="HtB-I2-usa"/>
+                <constraint firstItem="1Ov-qW-413" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="109" id="Ra0-Iw-XQY"/>
+                <constraint firstAttribute="bottom" secondItem="1Ov-qW-413" secondAttribute="bottom" constant="26" id="ZAr-X2-6Nf"/>
+                <constraint firstItem="1Ov-qW-413" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZqF-06-oFx"/>
+                <constraint firstItem="LEi-cN-jVq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="fxV-ti-0eM"/>
+                <constraint firstItem="1Ov-qW-413" firstAttribute="top" secondItem="LEi-cN-jVq" secondAttribute="bottom" constant="24" id="ioi-el-zZO"/>
+                <constraint firstAttribute="bottom" secondItem="1Ov-qW-413" secondAttribute="bottom" constant="26" id="kx8-cQ-mIN"/>
+                <constraint firstItem="LEi-cN-jVq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="rrj-xV-91H"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="A6a-dH-xwy"/>
+                    <exclude reference="ioi-el-zZO"/>
+                    <exclude reference="kx8-cQ-mIN"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="278" y="198"/>
+        </view>
+    </objects>
+</document>

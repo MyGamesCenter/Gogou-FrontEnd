@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MySettingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/mySettingAppBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mySettingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appMainColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <Button
+                android:id="@+id/mySettingBackButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backward"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/mysetting"
+                android:textColor="@color/toolbarTextColor"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_padding_top_bottom"
+           >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg1"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <ImageView
+                    android:id="@+id/personalCard"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/personal_card"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/personal_document_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_toRightOf="@id/personalCard"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/personal_document"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <ImageView
+                    android:id="@+id/userInfoForward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <ImageView
+                    android:id="@+id/securityLock"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/lock"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/account_security_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_toRightOf="@id/securityLock"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/account_and_security"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <ImageView
+                    android:id="@+id/accountSecurityForward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <!--<ProgressBar-->
+            <!--style="?android:attr/progressBarStyleHorizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/progressBar" />-->
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logout_button"
+            android:text="@string/logout"
+            android:textSize="14dp"
+            android:textColor="@color/appMainColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/button_padding_left_right"
+            android:layout_marginRight="@dimen/button_padding_left_right"
+            android:layout_marginBottom="@dimen/button_padding_top_bottom" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

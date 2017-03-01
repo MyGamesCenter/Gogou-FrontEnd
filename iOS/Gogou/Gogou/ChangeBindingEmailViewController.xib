@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeBindingEmailViewController">
+            <connections>
+                <outlet property="button" destination="IKk-D3-NJa" id="mqe-Ag-Bxg"/>
+                <outlet property="tableView" destination="hf0-m7-hMw" id="mPB-69-0Kv"/>
+                <outlet property="topLabel" destination="Rni-gJ-g91" id="icX-us-AJH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKk-D3-NJa" customClass="FlatButton">
+                    <rect key="frame" x="4" y="180" width="592" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="A5s-Ki-0F3"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-m7-hMw">
+                    <rect key="frame" x="0.0" y="70" width="600" height="102"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="102" id="vmf-Om-dUI"/>
+                    </constraints>
+                    <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="   绑定邮箱最好已绑定手机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rni-gJ-g91">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="269" id="2k5-Dv-woM"/>
+                            <constraint firstAttribute="height" constant="28" id="Kyy-rU-HeZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hf0-m7-hMw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="5yJ-Di-olG"/>
+                <constraint firstItem="IKk-D3-NJa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="Etg-4z-Ddw"/>
+                <constraint firstItem="hf0-m7-hMw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="T8H-c4-tQ3"/>
+                <constraint firstItem="hf0-m7-hMw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UKx-f5-dUL"/>
+                <constraint firstItem="IKk-D3-NJa" firstAttribute="top" secondItem="hf0-m7-hMw" secondAttribute="bottom" constant="8" id="gyd-Rj-mlG"/>
+                <constraint firstItem="hf0-m7-hMw" firstAttribute="centerX" secondItem="IKk-D3-NJa" secondAttribute="centerX" id="nTg-VM-C7o"/>
+                <constraint firstAttribute="trailing" secondItem="hf0-m7-hMw" secondAttribute="trailing" id="uG8-fW-HLO"/>
+                <constraint firstAttribute="trailing" secondItem="hf0-m7-hMw" secondAttribute="trailing" id="vUl-8z-gOi"/>
+                <constraint firstItem="hf0-m7-hMw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xag-Qx-3t6"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

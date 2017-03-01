@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/more_select_layout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right">
+
+        <Button
+            android:id="@+id/kind_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_category"
+            android:textColor="@color/releaseChoiceButtonColor"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/hign_score_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hignscore"
+            android:textColor="@color/releaseChoiceButtonColor"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/low_fee_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lowfee"
+            android:textColor="@color/releaseChoiceButtonColor"
+            android:textStyle="bold" />
+    </LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.photo.AlbumActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/galleryLayoutToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appMainColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <Button
+                android:id="@+id/galleryBackButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backward"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right">
+
+                <Button
+                    android:id="@+id/gImageSelectedBtn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/check_box"
+                    android:clickable="true" />
+
+                <Button
+                    android:id="@+id/gImageSelectedGrayBtn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/check_box_gray"
+                    android:clickable="true"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:id="@+id/galleryBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_buttons_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/select_image_bottom_bar" >
+
+            <Button
+                android:id="@+id/galleryConfirmButton"
+                android:layout_width="@dimen/bottom_buttons_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/button_padding_left_right"
+                android:layout_marginTop="@dimen/button_padding_top_bottom2"
+                android:layout_marginBottom="@dimen/button_padding_top_bottom2"
+                android:textSize="@dimen/list_item_subtitle"
+                android:background="@drawable/gogou_main_button"
+                android:text="@string/finish"
+                />
+        </RelativeLayout>
+
+        <info.gogou.gogou.ui.zoom.ViewPagerFixed
+            android:id="@+id/imageGallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/galleryBottomLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black"
+            android:unselectedAlpha="1">
+        </info.gogou.gogou.ui.zoom.ViewPagerFixed>
+    </RelativeLayout>
+   
+</android.support.design.widget.CoordinatorLayout>
+  

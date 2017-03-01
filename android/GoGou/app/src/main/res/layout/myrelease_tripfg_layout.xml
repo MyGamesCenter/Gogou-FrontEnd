@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/order_info_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/buyer"-->
+            <!--android:layout_width="100dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginLeft="15dip"-->
+            <!--android:textSize="@dimen/order_text"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="@string/source"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/seller"-->
+            <!--android:layout_width="100dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/buyer"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginLeft="10dip"-->
+            <!--android:textSize="@dimen/order_text"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="@string/destination"/>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/order_detail"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/seller"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textSize="@dimen/order_text"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="@string/arrivetime"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <ListView
+        android:id="@+id/myRelease_trip_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#fff8f8"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:longClickable="true"
+        android:listSelector="@drawable/main_list_selector">
+    </ListView>
+
+</LinearLayout>

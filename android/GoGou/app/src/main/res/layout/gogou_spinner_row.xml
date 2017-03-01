@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/spinner_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/spinner_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/spinner_image"
+        android:text="Product"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegisterTableViewCell1" id="KGk-i7-Jjw" customClass="RegisterTableViewCell1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyc-D3-xFb">
+                        <rect key="frame" x="102" y="7" width="98" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="98" id="Kwh-nb-NzK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJh-Ix-IFW">
+                        <rect key="frame" x="15" y="11" width="71" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71" id="Pl1-0j-tMR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4c-ed-VPE">
+                        <rect key="frame" x="208" y="7" width="104" height="30"/>
+                        <state key="normal" title="|  获取校验码">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pyc-D3-xFb" firstAttribute="top" secondItem="f4c-ed-VPE" secondAttribute="top" id="2Kp-kD-fB7"/>
+                    <constraint firstItem="f4c-ed-VPE" firstAttribute="leading" secondItem="pyc-D3-xFb" secondAttribute="trailing" constant="8" symbolic="YES" id="9oC-yj-6vr"/>
+                    <constraint firstItem="f4c-ed-VPE" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Id3-Wt-AF4"/>
+                    <constraint firstItem="lJh-Ix-IFW" firstAttribute="baseline" secondItem="f4c-ed-VPE" secondAttribute="baseline" id="SNL-7H-ppI"/>
+                    <constraint firstItem="pyc-D3-xFb" firstAttribute="bottom" secondItem="f4c-ed-VPE" secondAttribute="bottom" id="Xha-KL-t0r"/>
+                    <constraint firstItem="lJh-Ix-IFW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lcb-FV-4t1"/>
+                    <constraint firstItem="lJh-Ix-IFW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="npd-AK-27V"/>
+                    <constraint firstItem="pyc-D3-xFb" firstAttribute="leading" secondItem="lJh-Ix-IFW" secondAttribute="trailing" constant="16" id="uAV-nI-iRe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ckCodeButton" destination="f4c-ed-VPE" id="USU-oQ-l2F"/>
+                <outlet property="keyLabel" destination="lJh-Ix-IFW" id="I5U-ef-Maf"/>
+                <outlet property="valueTextField" destination="pyc-D3-xFb" id="yuZ-rB-XXn"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

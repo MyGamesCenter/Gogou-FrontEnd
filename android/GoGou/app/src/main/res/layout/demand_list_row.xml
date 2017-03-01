@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_list_selector"
+        android:paddingBottom="@dimen/list_item_padding_top_bottom"
+        android:paddingTop="@dimen/list_item_padding_top_bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/list_item_padding_left_right"
+            android:paddingRight="@dimen/list_item_padding_left_right" >
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/luxury"
+                android:layout_gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/list_item_image_pad" >
+
+                <TextView
+                    android:id="@+id/demandTitle"
+                    android:layout_width="@dimen/list_item_demand_title_width"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/list_item_padding_top_bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_origin"
+                        android:textColor="@color/aluminum"
+                        android:textSize="@dimen/list_item_subtitle" />
+
+                    <TextView
+                        android:id="@+id/demandSubtitle"
+                        android:layout_width="@dimen/list_item_demand_subtitle_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/list_item_padding_left_right"
+                        android:textSize="@dimen/list_item_subtitle"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collect_location"
+                        android:textColor="@color/aluminum"
+                        android:paddingLeft="@dimen/list_item_pad"
+                        android:textSize="@dimen/list_item_subtitle" />
+
+                    <TextView
+                        android:id="@+id/demandSubtitle2"
+                        android:layout_width="@dimen/list_item_demand_subtitle_width"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/list_item_subtitle"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <!-- Rightend Arrow -->
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

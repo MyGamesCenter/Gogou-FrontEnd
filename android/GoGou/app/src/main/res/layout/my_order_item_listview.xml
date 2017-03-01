@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/main_list_selector"
+        android:paddingBottom="@dimen/list_item_padding_top_bottom"
+        android:paddingTop="@dimen/list_item_padding_top_bottom" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_top_bottom_height"
+            android:paddingLeft="@dimen/list_item_padding_left_right"
+            android:paddingRight="@dimen/list_item_padding_left_right">
+
+            <TextView
+                android:id="@+id/traveller4Order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/layout_padding_left_right"
+                android:text="@string/order_traveller"
+                android:textColor="@color/aluminum"
+                android:textSize="@dimen/list_item_title"/>
+
+            <TextView
+                android:id="@+id/orderTraveller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/traveller4Order"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:textSize="@dimen/list_item_title"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/orderOwnerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/layout_padding_left_right"
+                android:text="@string/order_owner"
+                android:textColor="@color/aluminum"
+                android:textSize="@dimen/list_item_title"/>
+
+            <TextView
+                android:id="@+id/orderOwnerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/orderOwnerLabel"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:textSize="@dimen/list_item_title"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/button_padding_left_right"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/list_item_title"
+                android:textColor="@color/appMainColor" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/orderMainLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/list_item_padding_left_right"
+            android:paddingRight="@dimen/list_item_padding_left_right"
+            android:paddingBottom="@dimen/layout_padding_top_bottom"
+            android:paddingTop="@dimen/layout_padding_top_bottom"
+            android:background="@color/iron2">
+
+            <ImageView
+                android:id="@+id/orderImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/luxury"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/layout_padding_left_right"
+                android:paddingTop="@dimen/layout_padding_top_bottom"
+                android:paddingBottom="@dimen/layout_padding_top_bottom"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/list_item_image_pad" >
+
+                <TextView
+                    android:id="@+id/orderProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderProductDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/aluminum"
+                    android:textSize="@dimen/list_item_subtitle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/order_detail_quantity_price"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_top_bottom_height"
+            android:paddingLeft="@dimen/list_item_padding_left_right"
+            android:paddingRight="@dimen/list_item_padding_left_right">
+
+            <Button
+                android:id="@+id/cancelOrderButton"
+                android:layout_width="@dimen/order_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_button"
+                android:text="@string/cancel_order"
+                android:textSize="@dimen/order_button_text_size"
+                android:textColor="@color/appMainColor"
+                android:layout_gravity="center_horizontal"
+                android:layout_toLeftOf="@+id/payOrderButton"
+                android:layout_marginRight="@dimen/button_padding_left_right" />
+
+            <Button
+                android:id="@+id/payOrderButton"
+                android:layout_width="@dimen/order_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_button"
+                android:text="@string/pay_order"
+                android:textSize="@dimen/order_button_text_size"
+                android:textColor="@color/appMainColor"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/button_padding_left_right" />
+
+            <Button
+                android:id="@+id/confirmOrderButton"
+                android:layout_width="@dimen/order_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_button"
+                android:text="@string/confirm_order2"
+                android:textSize="@dimen/order_button_text_size"
+                android:textColor="@color/appMainColor"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/button_padding_left_right" />
+
+            <Button
+                android:id="@+id/deliverOrderButton"
+                android:layout_width="@dimen/order_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_button"
+                android:text="@string/confirm_deliver"
+                android:textSize="@dimen/order_button_text_size"
+                android:textColor="@color/appMainColor"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/button_padding_left_right"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/collectOrderButton"
+                android:layout_width="@dimen/order_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_button"
+                android:text="@string/confirm_collect"
+                android:textSize="@dimen/order_button_text_size"
+                android:textColor="@color/appMainColor"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/button_padding_left_right"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/deleteOrderButton"
+                android:layout_width="@dimen/order_button_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_button"
+                android:text="@string/delete_order"
+                android:textSize="@dimen/order_button_text_size"
+                android:textColor="@color/darkgray"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/button_padding_left_right"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

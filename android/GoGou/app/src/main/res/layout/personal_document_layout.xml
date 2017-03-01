@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.PersonalDocumentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/userInfoAppBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/userInfoToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appMainColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <Button
+                android:id="@+id/userInfoBackBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:background="@drawable/backward"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/personal_document"
+                android:textColor="@color/toolbarTextColor"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_padding_top_bottom">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg1"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/userImageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/avatar"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <!-- user image -->
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/avatarForwardImage"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/user"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/layout_padding_left_right"/>
+
+                <!-- Rightend Arrow -->
+                <ImageView
+                    android:id="@+id/avatarForwardImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/userNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/user_name"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <TextView
+                    android:id="@+id/userNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/userNameForwardImage"
+                    android:layout_marginRight="@dimen/layout_padding_left_right"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <!-- Rightend Arrow -->
+                <ImageView
+                    android:id="@+id/userNameForwardImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/userGenderLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/gender"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <!-- gender -->
+                <TextView
+                    android:id="@+id/userGenderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/userGenderForwardImage"
+                    android:layout_marginRight="@dimen/layout_padding_left_right"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <!-- Rightend Arrow -->
+                <ImageView
+                    android:id="@+id/userGenderForwardImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/userAddressLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/myAddress"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <!-- Rightend Arrow -->
+                <ImageView
+                    android:id="@+id/userAddressForwardImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

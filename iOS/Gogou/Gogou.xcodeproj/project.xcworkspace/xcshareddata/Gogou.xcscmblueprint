@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0A06BC932453583A27582A7FB264EEC33ED656AF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d7b68248-0f09-df43-bc35-9c59f6f4e323++9500" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0A06BC932453583A27582A7FB264EEC33ED656AF" : 0,
+    "d7b68248-0f09-df43-bc35-9c59f6f4e323++9500" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "45BF8A51-F921-4481-A199-20725E74AD35",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0A06BC932453583A27582A7FB264EEC33ED656AF" : "GoGou-Frontend\/",
+    "d7b68248-0f09-df43-bc35-9c59f6f4e323++9500" : "GoGou-Frontend\/iOS\/Gogou\/Gogou\/Pics\/imgPickerImages\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Gogou",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/Gogou\/Gogou.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/letianxu\/GoGou-Frontend.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0A06BC932453583A27582A7FB264EEC33ED656AF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.15.218\/LawChatPublicIOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d7b68248-0f09-df43-bc35-9c59f6f4e323++9500"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom">
+
+        <TextView
+            android:id="@+id/orderDetailProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:text="test"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/orderDetailProductBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:layout_toRightOf="@+id/orderDetailProductName"
+            android:textSize="15sp"
+            android:text="test"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom">
+
+        <TextView
+            android:id="@+id/orderDetailDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/detail_text"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:lines="3"
+            android:textSize="13sp"
+            android:textColor="@color/aluminum"
+            android:text="test"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_detail_layout_bg">
+
+        <TextView
+            android:id="@+id/trip_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:text="@string/kind"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/trip_category1_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/trip_category"
+            android:layout_marginLeft="@dimen/list_item_padding_left_right"
+            android:paddingLeft="@dimen/layout_padding_top_bottom"
+            android:paddingRight="@dimen/layout_padding_top_bottom"
+            android:background="@color/appMainColor"
+            android:text="优先类别"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/trip_category2_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/trip_category1_edit"
+            android:layout_marginLeft="@dimen/list_item_padding_left_right"
+            android:paddingLeft="@dimen/layout_padding_top_bottom"
+            android:paddingRight="@dimen/layout_padding_top_bottom"
+            android:background="@color/appMainColor"
+            android:text="优先类别"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+
+        <TextView
+            android:id="@+id/trip_category3_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/trip_category2_edit"
+            android:layout_marginLeft="@dimen/list_item_padding_left_right"
+            android:paddingLeft="@dimen/layout_padding_top_bottom"
+            android:paddingRight="@dimen/layout_padding_top_bottom"
+            android:background="@color/appMainColor"
+            android:text="优先类别"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

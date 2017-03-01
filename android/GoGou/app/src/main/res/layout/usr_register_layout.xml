@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.UsrRegisterActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/registerActivityToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appMainColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <Button
+                android:id="@+id/registerBackButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backward"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/toolbarTextColor"
+                android:textSize="20sp"
+                android:textStyle="normal"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginRight="@dimen/button_padding_left_right">
+
+                <TextView
+                    android:id="@+id/registerEmailLabel"
+                    android:layout_width="@dimen/register_label_width"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/button_padding_left_right"
+                    android:text="@string/email"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <EditText
+                    android:id="@+id/registerEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_toRightOf="@+id/registerEmailLabel"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:layout_marginRight="@dimen/layout_padding_left_right"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_email_hint2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginRight="@dimen/button_padding_left_right">
+
+                <TextView
+                    android:id="@+id/registerUsernameLabel"
+                    android:layout_width="@dimen/register_label_width"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/button_padding_left_right"
+                    android:text="@string/user_name"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <EditText
+                    android:id="@+id/registerUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_toRightOf="@+id/registerUsernameLabel"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:layout_marginRight="@dimen/layout_padding_left_right"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_username_hint"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginRight="@dimen/button_padding_left_right">
+
+                <TextView
+                    android:id="@+id/registerRegCodeLabel"
+                    android:layout_width="@dimen/register_label_width"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/button_padding_left_right"
+                    android:text="@string/checksum"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <EditText
+                    android:id="@+id/registerRegCode"
+                    android:layout_width="@dimen/register_text_width"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_toRightOf="@+id/registerRegCodeLabel"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:layout_marginRight="@dimen/layout_padding_left_right"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_reg_code"/>
+
+                <TextView
+                    android:id="@+id/registerDivider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_toRightOf="@+id/registerRegCode"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/button_padding_left_right"
+                    android:layout_marginRight="@dimen/button_padding_left_right"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/jet"
+                    android:text="|"/>
+
+                <TextView
+                    android:id="@+id/registerGetRegCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_toRightOf="@+id/registerDivider"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/button_padding_left_right"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:text="@string/get_reg_code"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginRight="@dimen/button_padding_left_right">
+
+                <TextView
+                    android:id="@+id/registerPasswordLabel"
+                    android:layout_width="@dimen/register_label_width"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/button_padding_left_right"
+                    android:text="@string/password"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <EditText
+                    android:id="@+id/registerPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_toRightOf="@+id/registerPasswordLabel"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:layout_marginRight="@dimen/layout_padding_left_right"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_password_hint"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginRight="@dimen/button_padding_left_right">
+
+                <TextView
+                    android:id="@+id/registerPassword2Label"
+                    android:layout_width="@dimen/register_label_width"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/button_padding_left_right"
+                    android:text="@string/password_confirm"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <EditText
+                    android:id="@+id/registerPasswordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/register_label_height"
+                    android:layout_toRightOf="@+id/registerPassword2Label"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:layout_marginRight="@dimen/layout_padding_left_right"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_password_hint2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginRight="@dimen/button_padding_left_right">
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_am_seller_label"
+                    android:id="@+id/registerSellerSwitch"
+                    android:layout_marginLeft="@dimen/button_padding_left_right"
+                    android:switchPadding="@dimen/button_padding_left_right"
+                    android:textOn="@string/yes_label"
+                    android:textOff="@string/no_label"
+                    android:layout_gravity="center_horizontal" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            >
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@drawable/gogou_main_button"
+                android:text="@string/register"
+                android:textSize="15dp"
+                android:textColor="@color/buttonTextColor"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginRight="@dimen/button_padding_left_right"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

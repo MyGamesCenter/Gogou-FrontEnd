@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GoGou/uikit/libs/fastjson-1.1.34.android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GoGou/uikit/libs/universal-image-loader-1.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GoGou/uikit/libs/nim-sdk-1.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GoGou/uikit/libs/netty-4.0.23-for-yx.final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

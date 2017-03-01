@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/order_top_bottom_height"
+    android:paddingLeft="@dimen/list_item_padding_left_right"
+    android:paddingRight="@dimen/list_item_padding_left_right"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/button_padding_top_bottom2"
+        android:paddingBottom="@dimen/button_padding_top_bottom2">
+
+        <TextView
+            android:id="@+id/orderQuantityLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/list_item_subtitle"
+            android:textColor="@color/black"
+            android:text="@string/order_quantity_label1"/>
+
+        <TextView
+            android:id="@+id/orderQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/orderQuantityLabel1"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/list_item_title"
+            android:textColor="@color/appMainColor"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/orderQuantityLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/orderQuantity"
+            android:layout_marginLeft="@dimen/button_padding_left_right"
+            android:textSize="@dimen/list_item_subtitle"
+            android:textColor="@color/black"
+            android:text="@string/order_quantity_label2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buyerPriceRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buyer_price"
+            android:layout_toLeftOf="@+id/buyerMinPrice"
+            android:textSize="@dimen/list_item_subtitle"
+            android:layout_marginRight="@dimen/list_item_padding_left_right"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/buyerMinPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/orderPriceSymbol"
+            android:textSize="@dimen/list_item_title"
+            android:textColor="@color/appMainColor"
+            android:layout_centerVertical="true"
+            android:text="0.00"/>
+
+        <TextView
+            android:id="@+id/orderPriceSymbol"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_padding_left_right"
+            android:layout_marginRight="@dimen/list_item_padding_left_right"
+            android:layout_toLeftOf="@+id/buyerMaxPrice"
+            android:textAlignment="center"
+            android:text="—"
+            android:textSize="@dimen/list_item_title"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/buyerMaxPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/list_item_title"
+            android:textColor="@color/appMainColor"
+            android:layout_centerVertical="true"
+            android:text="0.00"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/finalPriceArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/orderPriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/orderPrice"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/list_item_subtitle"
+            android:textColor="@color/black"
+            android:text="@string/order_price_label"
+            />
+
+        <TextView
+            android:id="@+id/orderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/button_padding_left_right"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/list_item_title"
+            android:textColor="@color/appMainColor"
+            android:text="0.00" />
+
+    </RelativeLayout>
+</LinearLayout>
+

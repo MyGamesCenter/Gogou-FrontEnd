@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.UsrLoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/loginActivityToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appMainColor"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <Button
+                android:id="@+id/loginBackButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backward"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/toolbarTextColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_padding_top_bottom"
+           >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg1"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/loginNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/user_name"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <EditText
+                    android:id="@+id/loginNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_toRightOf="@+id/loginNameLabel"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:layout_marginRight="@dimen/button_padding_left_right"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/login_hint"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/loginPasswordLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:text="@string/password"
+                    android:textColor="@color/jet"
+                    android:typeface="sans"
+                    android:textSize="@dimen/list_item_title" />
+
+                <EditText
+                    android:id="@+id/loginPasswordText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_toRightOf="@+id/loginPasswordLabel"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/layout_padding_left_right"
+                    android:layout_marginRight="@dimen/button_padding_left_right"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/user_text_color"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_password_hint"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/layout_padding_top_bottom2">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:background="@drawable/gogou_main_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/button_padding_left_right"
+                android:layout_marginRight="@dimen/button_padding_left_right"
+                android:text="@string/login"
+                android:textSize="@dimen/list_item_title"
+                android:textColor="@color/buttonTextColor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/otherlogin"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/jumbo"
+                android:textSize="@dimen/list_item_title"
+                android:gravity="center_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_padding_top_bottom"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/wechatLoginButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/wechat"
+                    android:clickable="true">
+                </ImageButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_padding_top_bottom">
+
+                <TextView
+                    android:id="@+id/forgotPasswordButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot_password"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/jet"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/button_padding_left_right"
+                    android:layout_marginBottom="@dimen/layout_padding_top_bottom2"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/loginRegisterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register"
+                    android:textSize="@dimen/list_item_title"
+                    android:textColor="@color/jet"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/button_padding_left_right"
+                    android:layout_marginBottom="@dimen/layout_padding_top_bottom2"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

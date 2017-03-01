@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "278662178931",
+    "firebase_url": "https://gogou2-1327.firebaseio.com",
+    "project_id": "gogou2-1327",
+    "storage_bucket": "gogou2-1327.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278662178931:android:ccef850be546bfdc",
+        "android_client_info": {
+          "package_name": "info.gogou.gogou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278662178931-1opep5pj6egh0gpn9pt49nanpckiiesl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlSgz7pMLUPMX0fapd_YJb6fkuYt7qlTk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

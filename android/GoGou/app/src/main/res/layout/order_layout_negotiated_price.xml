@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/list_item_padding_top_bottom"
+    android:orientation="vertical"
+    android:id="@+id/negotiatedPriceLayout"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@drawable/order_form_layout_bg1">
+
+        <TextView
+            android:id="@+id/negotiatedPriceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_price"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding_top_bottom"
+        android:paddingBottom="@dimen/layout_padding_top_bottom"
+        android:background="@drawable/order_form_layout_bg">
+
+        <TextView
+            android:id="@+id/negotiatedPriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/negotiated_price"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textSize="15sp"
+            android:textColor="@color/aluminum"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/negotiatedPrice"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_left_right"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/negotiatedPriceLabel"
+            android:inputType="number"
+            android:background="@drawable/edittext_corner_bg"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

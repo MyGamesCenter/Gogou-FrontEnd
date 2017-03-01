@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddAddressTableViewCell3" rowHeight="135" id="KGk-i7-Jjw" customClass="AddAddressTableViewCell3">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="134.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="详细收货地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmm-30-RQK">
+                        <rect key="frame" x="14" y="8" width="102" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pEN-0C-CqB">
+                        <rect key="frame" x="14" y="32" width="291" height="95"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pEN-0C-CqB" firstAttribute="top" secondItem="bmm-30-RQK" secondAttribute="bottom" constant="3" id="5u4-y5-6GQ"/>
+                    <constraint firstItem="bmm-30-RQK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="GMU-Yx-yY8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pEN-0C-CqB" secondAttribute="bottom" constant="-0.5" id="Qok-VL-kGJ"/>
+                    <constraint firstItem="pEN-0C-CqB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lYV-VD-Wpf"/>
+                    <constraint firstItem="bmm-30-RQK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="s4q-dC-ESz"/>
+                    <constraint firstItem="bmm-30-RQK" firstAttribute="leading" secondItem="pEN-0C-CqB" secondAttribute="leading" id="sXV-md-BwJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="keyLabel" destination="bmm-30-RQK" id="oEm-mR-sdY"/>
+                <outlet property="valueTextView" destination="pEN-0C-CqB" id="iHt-9u-P1z"/>
+            </connections>
+            <point key="canvasLocation" x="393" y="462.5"/>
+        </tableViewCell>
+    </objects>
+</document>

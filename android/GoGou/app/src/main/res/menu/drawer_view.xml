@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myRelease"
+            android:icon="@drawable/publish"
+            android:title="@string/myRelease" />
+        <item
+            android:id="@+id/nav_myOrder"
+            android:icon="@drawable/sign_yuan"
+            android:title="@string/myOrder" />
+        <item
+            android:id="@+id/nav_myReceivedOrder"
+            android:icon="@drawable/order"
+            android:title="@string/myReceivedOrder" />
+        <item
+            android:id="@+id/nav_myFavorite"
+            android:icon="@drawable/favorite"
+            android:title="@string/myFavorite" />
+        <item
+            android:id="@+id/nav_myMessage"
+            android:icon="@drawable/chat"
+            android:title="@string/mymessage" />
+        <item
+            android:id="@+id/nav_mySetting"
+            android:icon="@drawable/gear"
+            android:title="@string/mysetting" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/books"
+            android:title="@string/help" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/info"
+            android:title="@string/about" />
+    </group>
+
+
+
+</menu>
